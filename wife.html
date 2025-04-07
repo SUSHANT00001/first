@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            color: #ff0066;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 20%;
+        }
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 3s ease-in-out;
+        }
+        p {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ff0066;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #cc0052;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, My Love!</h1>
+        <p>You make every day special, and today is all about celebrating you. ❤️</p>
+        <button onclick="showMessage()">Click for a Surprise</button>
+        <p id="surpriseMessage" style="display: none; margin-top: 20px;">You are the best thing that ever happened to me. I love you! 🎉</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('surpriseMessage');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
